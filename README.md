@@ -9,13 +9,15 @@
 
 ## Overview
 
-Proof-of-concept Java web application displaying electrical consumption data from six anonymous homes in the Boston area, using data from the MIT Reference Energy Disaggregation Data Set (REDD) program (http://redd.csail.mit.edu/).
+Proof-of-concept Java web application displaying electrical consumption data from six anonymous homes in the Boston area, using data from the MIT Reference Energy Disaggregation Data Set (REDD) program.
 
 ---
 
 ## The Data
 
 The source data consisted of logged smart meter power circuit readings — approximately once per second for main circuits and once every three seconds for individual circuits (refrigerator, lighting, bathroom outlet, dishwasher, etc.). The overall timeframe spanned an average of 1.5 months per house, with individual circuit files containing as many as 30 million lines — one line per power reading.
+
+The aggregated MySQL database (`.frm` table definitions and `.ibd` InnoDB data files) covering all circuits — AC, bathroom, dishwasher, disposal, electronics, furnace, heat, lighting, mains, microwave, miscellaneous, outdoor outlets, oven, refrigerator, smoke alarm, stove, subpanels, and washer/dryer — is retained locally but is too large to host here (2GB+). The original MIT REDD source dataset is no longer publicly available.
 
 Aggregated the right way, that data stops being a wall of numbers and starts being a portrait of how people actually live. Which circuits run on holiday weekends versus weekdays. When laundry gets done. What's still drawing power at 2am. The goal was to make that legible — to a homeowner trying to understand their bill, or a utility analyst looking for behavioral patterns worth acting on during a billing cycle rather than after it.
 
