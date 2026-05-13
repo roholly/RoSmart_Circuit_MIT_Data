@@ -33,6 +33,24 @@ Source data was aggregated to hourly and daily consumption averages by circuit t
 
 ---
 
+## Screenshots
+
+![Landing Page](images/house_ids_landing_page.png)
+![House Overview with Pie Chart](images/house_overview_pie_chart.png)
+![Daily Averages Bar Chart](images/house_daily_avgs_bar.png)
+![Hourly Averages Bar Chart](images/house_hourly_averages_bar.png)
+
+---
+
+## What This Demonstrates
+
+- Data aggregation pipeline design: reducing tens of millions of raw readings to human-consumable statistics
+- Full-stack Java web application development across database, business logic, and presentation layers
+- MVC architecture with clean separation of concerns
+- Schema design for time-series aggregation queries
+- Working with real research datasets not designed for immediate application use
+- Proof-of-concept design with real-world deployment considerations built in
+
 ## What This Demonstrates
 
 - Data aggregation pipeline design: reducing tens of millions of raw readings to human-consumable statistics
